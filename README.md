@@ -41,7 +41,7 @@ cd tecdia
 
 2. **Install Required Packages**
 
-* In the first cell of the notebook, run:
+* In the first cell of the notebook file (tecdia.ipynb), run:
 
 ```bash
 pip install -r requirements.txt
@@ -49,15 +49,7 @@ pip install -r requirements.txt
 
 * Required packages include: `opencv-python`, `numpy`, `torch`, `tqdm`
 
-3. **Open the Jupyter Notebook**
-
-```bash
-jupyter notebook
-```
-
-* Open the notebook file (`tecdia.ipynb`).
-
-4. **Run the Notebook**
+3. **After running the first cell, execute the second (main) cell to produce the jumbled video output.**
 
 * **Step 1:** Run the first cell to ensure all packages are installed.
 * **Step 2:** To **unjumble a video**, make sure your input video file is named `jumbled_video.mp4` and placed in the notebook folder. Run the second cell to process the video.

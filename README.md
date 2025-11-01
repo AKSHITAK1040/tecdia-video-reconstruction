@@ -1,6 +1,6 @@
-# 🎬 Video Unjumbler - AI-Powered Frame Reconstruction
+#  Intelligent Video Frame Reordering System
 
-An advanced Python tool that uses computer vision and AI algorithms to automatically reconstruct scrambled videos by analyzing frame similarity, optical flow, and temporal continuity.
+A powerful computer vision tool that scrambles and reconstructs video sequences using AI-driven frame analysis, optical flow detection, and temporal pattern recognition.
 
 ## 📋 Overview
 

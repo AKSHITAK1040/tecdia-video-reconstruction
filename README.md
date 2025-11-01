@@ -30,30 +30,50 @@ The algorithm uses a multi-stage pipeline combining:
 
 ### Installation
 
+---
+
 1. **Clone the repository**
-   ```bash
-   git clone https://github.com/your-username/video-unjumbler.git
-   cd video-unjumbler
-   ```
 
-2. **Install dependencies**
-   ```bash
-   pip install -r requirements.txt
-   ```
-   
-   Required packages: `opencv-python`, `numpy`, `torch`, `tqdm`
+```bash
+git clone https://github.com/AKSHITAK1040/tecdia-video-reconstruction.git
+cd tecdia
+```
 
-3. **Launch your environment**
-   
-   **Jupyter Notebook:**
-   ```bash
-   jupyter notebook
-   ```
-   
-   **VS Code:**
-   - Open project folder
-   - Install Jupyter extension
-   - Open `tecdia.ipynb`
+2. **Install Required Packages**
+
+* In the first cell of the notebook, run:
+
+```bash
+pip install -r requirements.txt
+```
+
+* Required packages include: `opencv-python`, `numpy`, `torch`, `tqdm`
+
+3. **Open the Jupyter Notebook**
+
+```bash
+jupyter notebook
+```
+
+* Open the notebook file (`tecdia.ipynb`).
+
+4. **Run the Notebook**
+
+* **Step 1:** Run the first cell to ensure all packages are installed.
+* **Step 2:** To **unjumble a video**, make sure your input video file is named `jumbled_video.mp4` and placed in the notebook folder. Run the second cell to process the video.
+* **Step 3:** To **jumble any video**, place your video in the folder, update the filename in the cell, and run the cell to generate a jumbled version.
+
+5. **Output**
+
+* All processed videos (jumbled or unjumbled) will be saved in the same folder as the notebook.
+
+---
+
+## Notes
+
+* Ensure that your video files are in `.mp4` format.
+* Make sure to run the notebook in the same directory where the video files are located.
+
 
 ## 📖 Usage
 

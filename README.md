@@ -1,61 +1,148 @@
-# Video Jumbler/Unjumbler
+# 🎬 Video Unjumbler - AI-Powered Frame Reconstruction
 
-This repository contains a Jupyter Notebook that allows you to **jumble** and **unjumble** videos.
+An advanced Python tool that uses computer vision and AI algorithms to automatically reconstruct scrambled videos by analyzing frame similarity, optical flow, and temporal continuity.
 
----
+## 📋 Overview
 
-## Instructions to Run
+This project reconstructs jumbled or shuffled video sequences back into their original temporal order using computer vision techniques. The algorithm analyzes frame-to-frame similarities and builds an optimal sequence representing the most likely chronological order.
+
+**Input**: Jumbled video file (e.g., `jumbled_video.mp4`)  
+**Output**: Reconstructed video (e.g., `reconstructed_video.mp4`)
+
+### How It Works
+
+The algorithm uses a multi-stage pipeline combining:
+- Color histogram analysis
+- Optical flow computation
+- Pixel-level similarity metrics
+- Greedy lookahead optimization
+- Temporal flow validation
+
+📄 **[View Full Algorithm Documentation (PDF)](./DMMS_Special_Issue_on_BPM___Research___Case_Study_Template__3_.pdf)** - Complete technical details, mathematical formulas, flowcharts, and complexity analysis.
+
+## 🚀 Quick Start
+
+### Prerequisites
+
+- Python 3.7+
+- Jupyter Notebook or VS Code with Jupyter extension
+- 4GB+ RAM recommended
+
+### Installation
 
 1. **Clone the repository**
+   ```bash
+   git clone https://github.com/your-username/video-unjumbler.git
+   cd video-unjumbler
+   ```
 
-```bash
-git clone https://github.com/your-username/your-repo.git
-cd your-repo
-```
+2. **Install dependencies**
+   ```bash
+   pip install -r requirements.txt
+   ```
+   
+   Required packages: `opencv-python`, `numpy`, `torch`, `tqdm`
 
-2. **Open the Jupyter Notebook**
+3. **Launch your environment**
+   
+   **Jupyter Notebook:**
+   ```bash
+   jupyter notebook
+   ```
+   
+   **VS Code:**
+   - Open project folder
+   - Install Jupyter extension
+   - Open `tecdia.ipynb`
 
-* Launch Jupyter Notebook in the repo folder:
+## 📖 Usage
 
-```bash
-jupyter notebook
-```
+### Unjumble a Video
 
-* Open the notebook file (`tecdia.ipynb`).
+1. Place your scrambled video as `jumbled_video.mp4`
+2. Open `tecdia.ipynb`
+3. Run the **MAIN CELL** (marked at top of notebook)
+4. Output: `reconstructed_video.mp4`
 
-3. **Install Required Packages**
+### Process Custom Video
 
-* In the first cell of the notebook, run:
-
+Modify the filename in the main cell:
 ```python
-!pip install -r requirements.txt
+if __name__ == "__main__":
+    main("your_video.mp4")
 ```
 
-* This will install all necessary Python packages.
+### Sample Output
+```
+✅ Using device: cpu with 16 threads
+🎞️ Extracting frames...
+✅ Extracted 240 frames
+🧮 Computing similarity matrix...
+🔍 Building optimal chain...
+✅ Best chain: Avg=0.8734
+🎬 Rebuilding video...
+✅ Done! Total: 45.32s
+```
 
-4. **Run the Program**
-
-* In the next cell, follow the instructions to **unjumble a video**.
-* The default jumbled/input video file is:
+## 📁 Project Structure
 
 ```
-jumbled_video.mp4
+video-unjumbler/
+│
+├── tecdia.ipynb                    # Main notebook
+├── requirements.txt                # Dependencies
+├── DMMS_Special_Issue_...pdf      # Algorithm documentation
+├── jumbled_video.mp4              # Input video
+├── reconstructed_video.mp4        # Output video
+├── frames/                        # Temp storage (auto-created)
+└── README.md                      # This file
 ```
 
-* Run the second cell to process the video and get it unjumbled.
+## 📚 Documentation
 
-5. **Jumble Any Video**
+**Complete technical documentation available in the PDF:**
+- Algorithm pipeline and flowchart
+- Mathematical formulations
+- Similarity metrics equations
+- Computational complexity analysis
+- Implementation details
 
-* You can also jumble any video using the notebook:
+📄 **[→ Open Documentation PDF](./DMMS_Special_Issue_on_BPM___Research___Case_Study_Template__3_.pdf)**
 
-  * Place your video in the notebook folder.
-  * Update the video file name in the cell where jumbled videos are processed.
-  * Run the cell to generate a jumbled version.
+## ⚙️ Performance
+
+| Video Length | Processing Time |
+|--------------|-----------------|
+| < 5 minutes  | 30-60 seconds   |
+| 5-15 minutes | 1-3 minutes     |
+| > 15 minutes | 3-10 minutes    |
+
+*Multi-threaded processing uses all available CPU cores*
+
+## 💡 Use Cases
+
+- 🔍 Video forensics and recovery
+- 🎓 Computer vision education
+- 🧩 Video puzzle creation
+- 📹 Corrupted data restoration
+
+## 🎯 Key Features
+
+- Fully automatic reconstruction
+- Multi-threaded parallel processing
+- Temporal flow validation
+- Outlier detection and removal
+- Real-time progress tracking
+
+## 🤝 Contributing
+
+Contributions welcome! Submit Pull Requests or open issues.
+
+## 📧 Contact
+
+**Author**: Akshit Chaudhary  
+**Date**: November 2025
 
 ---
 
-## Notes
-
-* Make sure your video files are in the same folder as the notebook.
-* Output videos will be saved in the notebook folder by default.
-* The notebook works with `.mp4` videos.
+**For detailed algorithm explanation, see the [PDF documentation](./DMMS_Special_Issue_on_BPM___Research___Case_Study_Template__3_.pdf)*

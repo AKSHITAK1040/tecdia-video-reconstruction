@@ -16,6 +16,8 @@ This project reconstructs jumbled or shuffled video sequences back into their or
 > ⚡ **Access the full technical documentation here:**  
 > [ALGORITHMIC APPROACH AND THOUGHT PROCESS (PDF)](./DMMS_Special_Issue_on_BPM___Research___Case_Study_Template__3_.pdf)
 
+---
+
 ## 🚀 Quick Start
 
 ### Prerequisites

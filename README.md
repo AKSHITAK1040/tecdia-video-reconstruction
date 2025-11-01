@@ -9,16 +9,12 @@ This project reconstructs jumbled or shuffled video sequences back into their or
 **Input**: Jumbled video file (e.g., `jumbled_video.mp4`)  
 **Output**: Reconstructed video (e.g., `reconstructed_video.mp4`)
 
-### How It Works
+### How It Works (Explanation of Approach and Thought Process)
 
-The algorithm uses a multi-stage pipeline combining:
-- Color histogram analysis
-- Optical flow computation
-- Pixel-level similarity metrics
-- Greedy lookahead optimization
-- Temporal flow validation
+## 📄 **Complete Algorithm Documentation (PDF)**
 
-📄 **[View Full Algorithm Documentation (PDF)](./DMMS_Special_Issue_on_BPM___Research___Case_Study_Template__3_.pdf)** - Complete technical details, mathematical formulas, flowcharts, and complexity analysis.
+> ⚡ **Access the full technical documentation here:**  
+> [DMMS Special Issue on BPM - Research & Case Study Template (PDF)](./DMMS_Special_Issue_on_BPM___Research___Case_Study_Template__3_.pdf)
 
 ## 🚀 Quick Start
 

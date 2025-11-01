@@ -9,12 +9,12 @@ This project reconstructs jumbled or shuffled video sequences back into their or
 **Input**: Jumbled video file (e.g., `jumbled_video.mp4`)  
 **Output**: Reconstructed video (e.g., `reconstructed_video.mp4`)
 
-### How It Works (Explanation of Approach and Thought Process)
+### 
 
-## 📄 **Complete Algorithm Documentation (PDF)**
+## 📄 **How It Works (Explanation of Approach and Thought Process) (PDF)**
 
 > ⚡ **Access the full technical documentation here:**  
-> [DMMS Special Issue on BPM - Research & Case Study Template (PDF)](./DMMS_Special_Issue_on_BPM___Research___Case_Study_Template__3_.pdf)
+> [ALGORITHMIC APPROACH AND THOUGHT PROCESS (PDF)](./DMMS_Special_Issue_on_BPM___Research___Case_Study_Template__3_.pdf)
 
 ## 🚀 Quick Start
 

@@ -51,6 +51,8 @@ pip install -r requirements.txt
 
 3. **After running the first cell, execute the second (main) cell to produce the jumbled video output.**
 
+
+
 * **Step 1:** Run the first cell to ensure all packages are installed.
 * **Step 2:** To **unjumble a video**, make sure your input video file is named `jumbled_video.mp4` and placed in the notebook folder. Run the second cell to process the video.
 * **Step 3:** To **jumble any video**, place your video in the folder, update the filename in the cell, and run the cell to generate a jumbled version.
